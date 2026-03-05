@@ -1,6 +1,8 @@
 
 CREATE DATABASE Banking_system_db;
 
+USE Banking_system_db;
+
 CREATE TABLE accounts(
         account_id INT auto_increment PRIMARY KEY,
         customer_name VARCHAR(100) NOT NULL,             

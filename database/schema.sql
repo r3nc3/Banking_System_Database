@@ -1,3 +1,6 @@
+
+CREATE DATABASE Banking_system_db;
+
 CREATE TABLE accounts(
         account_id INT auto_increment PRIMARY KEY,
         customer_name VARCHAR(100) NOT NULL,             
@@ -15,4 +18,6 @@ CREATE TABLE transactions(
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         FOREIGN KEY (account_id) REFERENCES accounts(account_id)
 );
+
+
 
